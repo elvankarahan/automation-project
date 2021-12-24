@@ -13,7 +13,7 @@ public class BaseTest_Product extends BaseTest {
     @Order(1)
     public void check_homepage(){
         homePage = new HomePage(driver);
-        Assertions.assertTrue(homePage.isOnHomePage(), "No!");
+        Assertions.assertTrue(homePage.isOnHomePage(), "Not on homepage!");
     }
 
     @Test
@@ -21,7 +21,7 @@ public class BaseTest_Product extends BaseTest {
     public void search_product(){
         searchPage = new SearchPage(driver);
         homePage.searchBar.search("pantolon");
-        Assertions.assertTrue(searchPage.isOnSearchPage(), "No!");
+        Assertions.assertTrue(searchPage.isOnSearchPage(), "Not on search page!");
         searchPage.scrollAndClick();
     }
 
@@ -30,14 +30,14 @@ public class BaseTest_Product extends BaseTest {
     public void select_product(){
         productPage = new ProductPage(driver);
         searchPage.selectProduct();
-        Assertions.assertTrue(productPage.isOnProductPage(), "No!");
+        Assertions.assertTrue(productPage.isOnProductPage(), "Product not selected!");
     }
 
     @Test
     @Order(4)
     public void add_to_cart(){
         productPage.addToCart();
-        Assertions.assertTrue(productPage.increased(), "No!");
+        Assertions.assertTrue(productPage.increased(), "Not added to cart!");
 
     }
     @Test
@@ -45,21 +45,19 @@ public class BaseTest_Product extends BaseTest {
     public void check_prize(){
         productPage.goToCart();
         cartPage = new CartPage(driver);
-        Assertions.assertTrue(cartPage.checkPrize(), "No!");
+        Assertions.assertTrue(cartPage.checkPrize(), "Prices are not the same!");
     }
 
     @Test
     @Order(6)
     public void make_it_two(){
         cartPage.increase();
-        Assertions.assertTrue(cartPage.increased(), "No!");
+        Assertions.assertTrue(cartPage.increased(), "The value specified is invalid");
     }
     @Test
     @Order(7)
     public void remove_product(){
         cartPage.remove();
-        Assertions.assertTrue(cartPage.removed(), "No!");
+        Assertions.assertTrue(cartPage.removed(), "Not removed!");
     }
-
-
 }

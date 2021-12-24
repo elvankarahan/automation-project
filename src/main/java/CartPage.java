@@ -26,11 +26,11 @@ public class CartPage extends BasePage {
             count.selectByValue("2");
         }
 
-//        try {
-//            Thread.sleep(3000);
-//        }catch (Exception e){
-//            System.out.println(e);
-//        }
+        try {
+            Thread.sleep(2000);
+        }catch (Exception e){
+            System.out.println(e);
+        }
 
     }
 

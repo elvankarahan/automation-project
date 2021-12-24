@@ -1,7 +1,7 @@
-2021-12-23 20:20:38,562 INFO  [Log] check_homepage() ---> PASSED! 
-2021-12-23 20:20:42,798 INFO  [Log] search_product() ---> PASSED! 
-2021-12-23 20:20:46,579 INFO  [Log] select_product() ---> PASSED! 
-2021-12-23 20:20:48,161 INFO  [Log] add_to_cart() ---> PASSED! 
-2021-12-23 20:20:50,508 INFO  [Log] check_prize() ---> PASSED! 
-2021-12-23 20:20:50,816 INFO  [Log] make_it_two() ---> PASSED! 
-2021-12-23 20:20:51,776 INFO  [Log] remove_product() ---> PASSED! 
+2021-12-24 10:57:05,303 INFO  [Log] check_homepage() ---> PASSED! 
+2021-12-24 10:57:10,529 INFO  [Log] search_product() ---> PASSED! 
+2021-12-24 10:57:13,638 INFO  [Log] select_product() ---> PASSED! 
+2021-12-24 10:57:14,917 INFO  [Log] add_to_cart() ---> PASSED! 
+2021-12-24 10:57:16,704 INFO  [Log] check_prize() ---> PASSED! 
+2021-12-24 10:57:19,315 INFO  [Log] make_it_two() ---> PASSED! 
+2021-12-24 10:57:20,045 INFO  [Log] remove_product() ---> PASSED! 

@@ -13,7 +13,6 @@ public class ProductPage extends BasePage {
     By priceBox = By.id("priceNew");
     By cart = new By.ByCssSelector("a.o-header__userInfo--item.bwi-cart-o.-cart");
 
-    //public String productPrize;
     public static String price;
 
     public ProductPage(WebDriver driver) {
@@ -28,7 +27,6 @@ public class ProductPage extends BasePage {
         int size = getSizes().size();
         int randomNum = ThreadLocalRandom.current().nextInt(0, size);
         getSizes().get(randomNum).click();
-        //driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         _wait(addBasket);
         click(addBasket);
     }
